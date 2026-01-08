@@ -12,7 +12,17 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Contact App',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: Text('Contact App'),
+      // home: Text('Contact App'),
+      // home: Icon(Icons.star),
+      // home: Image.asset('alp.jpg'),
+      home: Center(
+        child: Container(
+          color: Colors.red,
+          width: 150,
+          height: 150,
+          child: Text('Hello'),
+        ),
+      ),
     );
   }
 }

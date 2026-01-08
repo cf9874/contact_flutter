@@ -1,0 +1,8 @@
+1강
+- 꼭알아야 할 위젯 4개
+    - 글자위젯      > Text()
+    - 이미지위젯    > Image.asset('경로')
+        > 최상위에 assets 디렉토리 생성
+         
+    - 아이콘위젯    > Icon(Icons.아이콘이름)
+    - 박스위젯      > Container() || SizedBox()
