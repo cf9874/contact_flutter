@@ -26,3 +26,11 @@
                 .start는 시작 부분에 다 모여
                 .end는 끝 부분에 다 모여
                 .center는 중간에 다 모여 
+
+3강 : 박스디자인 ( margin, padding, 정렬)
+    margin: EdgeInsets.all(10),
+    padding: EdgeInsets.all(10),
+    Center(), 
+    Align(
+        alignment:Alignment.bottomCenter 
+    ),
