@@ -16,7 +16,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.blue),
       home: Scaffold(
         appBar: AppBar(),
-        body: ListView(children: [ContactItem(), ContactItem(), ContactItem()]),
+        body: ListView.builder(
+          itemCount: 5,
+          itemBuilder: (context, i) {
+            return ContactItem();
+          },
+        ),
       ),
     );
   }
