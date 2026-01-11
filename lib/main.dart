@@ -19,7 +19,11 @@ class MyApp extends StatelessWidget {
         body: ListView.builder(
           itemCount: 5,
           itemBuilder: (context, i) {
-            return ContactItem();
+            print(i);
+            return ListTile(
+              leading: Image.asset('alp.jpg'),
+              title: Text('홍길동'),
+            );
           },
         ),
       ),
