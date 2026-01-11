@@ -60,3 +60,18 @@
         2. 바깥 박스부터 디자인하기
         3. 가로,세로 배치는 Row,Column 위젯 이용하기
 
+5강 : Expanded, Flexible
+  children:[] 안에 Flexible로 감싼 Container를 만들고
+    
+    Flexible(
+      child: Container(width: 100, height: 100, color: Colors.red),
+      flex: 5,
+    ),
+    Flexible(
+      child: Container(width: 100, height: 100, color: Colors.blue),
+      flex: 2,
+    ),
+
+    => 화면을 5:2 비율로 나눠가짐
+
+    Expanded : flex :1 가진 Flexible 박스랑 똑같음
