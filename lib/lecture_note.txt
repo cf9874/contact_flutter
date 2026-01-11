@@ -34,3 +34,29 @@
     Align(
         alignment:Alignment.bottomCenter 
     ),
+
+4강 : 플러터 typography & layout knowhow
+
+    appBar: AppBar(
+              title : Text('앱제목'),
+              leading : Icon(Icons.star),
+              actions : [ Icon(Icons.star), Icon(Icons.star) ],
+              backgroundColor: Colors.blue,
+            ),
+    TextButton( child: Text('버튼임', style : TextStyle( color : Color(0xffbabd3c) )), onPressed: (){} ,
+                      style: TextButton.styleFrom(
+                        fixedSize: Size(100,50),
+                        elevation: 20.0,
+
+                      ),),
+                    ElevatedButton( child: Text('버튼임'), onPressed: (){},
+                      style: ElevatedButton.styleFrom(backgroundColor: Colors.greenAccent),
+                    ),
+                    IconButton( icon: Icon(Icons.icecream_outlined), onPressed: (){} )
+
+      레이아웃 쉽게 짜는 방법
+        연습보다는 step을 정하기
+        1. 원화 위에 네모박스로 전부 구분
+        2. 바깥 박스부터 디자인하기
+        3. 가로,세로 배치는 Row,Column 위젯 이용하기
+

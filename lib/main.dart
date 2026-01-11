@@ -14,7 +14,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.blue),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Contact App', style: TextStyle(color: Colors.white)),
+          title: Text('앱제목'),
+          leading: Icon(Icons.star),
+          actions: [Icon(Icons.star), Icon(Icons.star)],
           backgroundColor: Colors.blue,
         ),
         body: Align(
@@ -29,7 +31,34 @@ class MyApp extends StatelessWidget {
               border: Border.all(color: Colors.black, width: 2),
               borderRadius: BorderRadius.circular(10),
             ),
-            child: Text('Hello'),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Text('Hellsso', style: TextStyle(color: Color(0xffbabd3c))),
+                TextButton(
+                  child: Text(
+                    '버튼임',
+                    style: TextStyle(color: Color(0xffbabd3c)),
+                  ),
+                  onPressed: () {},
+                  style: TextButton.styleFrom(
+                    fixedSize: Size(100, 50),
+                    elevation: 20.0,
+                  ),
+                ),
+                ElevatedButton(
+                  child: Text('버튼임'),
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.greenAccent,
+                  ),
+                ),
+                IconButton(
+                  icon: Icon(Icons.icecream_outlined),
+                  onPressed: () {},
+                ),
+              ],
+            ),
           ),
         ),
       ),
